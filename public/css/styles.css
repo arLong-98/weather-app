@@ -14,6 +14,9 @@ body{
 .main-content{
     flex-grow: 1;
 }
+p{
+    text-align:center;
+}
 
 footer{
     color: #888888;
@@ -23,12 +26,14 @@ footer{
 }
 
 header{
+    text-align: center;
     margin-top: 16px;
     margin-bottom: 48px;
 }
 
 h1{
-    font-size: 64px;
+    text-align: center;
+    font-size: 30px;
     margin-bottom: 16px;
 }
 
@@ -41,5 +46,30 @@ header a{
 
 .portrait {
     width:250px;
+}
+
+input{
+    border: 1px solid #cccccc;
+    margin-left: 77px;
+    margin-top: 50px;
+    width: 50%;
+    padding:8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background : #888888;
+    color: white;
+    margin-left: 135px ;
+    margin-top: 40px;
+    padding: 8px;
+
+}
+
+form div{
+    margin: auto;
+    width:50%;
+    padding: 5px;
 }
 
