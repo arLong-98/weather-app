@@ -10,7 +10,7 @@ weatherForm.addEventListener('submit',(event)=>{
     event.preventDefault(); //prevents default action which is to refresh the page
 
     const location = search.value;
-    const url = 'http://localhost:3000/weather?address='+location;
+    const url = '/weather?address='+location; //fetches from heroku url or local url depending where it is accessed
 
     msgOne.textContent = 'Loading...';
     msgTwo.textContent='';
