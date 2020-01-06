@@ -24,4 +24,21 @@ const geocode = (address,callback)=>{
 
 };
 
-module.exports = geocode;
+const geolocation = (callback)=>{
+        if(!navigator.geolocation){
+                callback('Geolocation not supported',)
+        }
+        else {
+        navigator.geolocation.getCurrentPosition((position)=>{
+                callback(undefined,{
+                        lattitude:position.coords.latitude,
+                        longitude:position.coords.longitude,
+                        location:'Current location'
+                })
+        });
+}
+}
+
+module.exports = {
+        geocode
+}
